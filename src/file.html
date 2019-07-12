@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Save</title>
+  </head>
+  <body>
+    <h1>Save</h1>
+   
+    <p><script>
+      // You can also require other files to run in this process
+      const file ={}
+      require('./modules/reader.js')(file)
+      document.write(`IIOW save: v${file.version}
+      Money: ${parseFloat(file.resources[0])}
+      Lives:${parseFloat(file.resources[2])}/${parseFloat(file.resources[1])}`)
+
+    </script>
+    <noscript>oof. Please enable scripts</noscript></p>
+    <p><a href=./index.html> < back home</a></p>
+  </body>
+</html>
